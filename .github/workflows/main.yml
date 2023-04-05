@@ -1,0 +1,23 @@
+name: "SWM GitHub Actions Basic"
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  first-job:
+    name: "First Job"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello World from ${{ github.ref }}
+        shell: bash
+        run: |
+          echo "Hello World from ${{ github.ref }}"
