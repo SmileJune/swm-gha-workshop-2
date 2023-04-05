@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: ./github/actions
+        uses: ./.github/actions
 
       - name: Send message to Webex space
         uses: ./
