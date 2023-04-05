@@ -3,7 +3,7 @@ name: "SWM GitHub Actions Basic"
 on:
   push:
     branches:
-      - main
+      - steps/03
     tags:
       - "v*"
   pull_request:
